@@ -1,13 +1,18 @@
 import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <main style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
-        <h1>Welcome to the App</h1>
-        <p>The navbar is now live and fully responsive.</p>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
       </main>
     </>
   );
