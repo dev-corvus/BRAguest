@@ -30,7 +30,7 @@ export default function Navbar() {
               >
                 About
               </NavLink>
-              <Link to="/about" className="navbar-cta" onClick={closeMenu}>
+              <Link to="/get-started" className="navbar-cta" onClick={closeMenu}>
                 Get Started
               </Link>
             </nav>
