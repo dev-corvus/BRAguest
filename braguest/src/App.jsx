@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import GetStarted from './pages/GetStarted';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/get-started" element={<GetStarted />} />
         </Routes>
       </main>
+      <Footer />
     </>
   );
 }
